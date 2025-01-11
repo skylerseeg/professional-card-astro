@@ -11,6 +11,9 @@ importers:
       astro:
         specifier: ^4.9.1
         version: 4.9.1
+      personal-card-astro:
+        specifier: 'file:'
+        version: 'file:'
 
 packages:
 
@@ -1445,6 +1448,9 @@ packages:
 
   path-to-regexp@6.2.2:
     resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
+
+  'personal-card-astro@file:':
+    resolution: {directory: '', type: directory}
 
   picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
@@ -3404,6 +3410,20 @@ snapshots:
   path-parse@1.0.7: {}
 
   path-to-regexp@6.2.2: {}
+
+  'personal-card-astro@file:':
+    dependencies:
+      astro: 4.9.1
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - typescript
 
   picocolors@1.0.1: {}
 
