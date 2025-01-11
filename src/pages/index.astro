@@ -5,26 +5,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
 ---
 
-<!-- profile2.webp you can remove | Photo <a href="https://unsplash.com/es/@charlesdeluvio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">charlesdeluvio</a> en <a href="https://unsplash.com/es/fotos/hombre-con-gorro-negro-kVg2DQTAK7c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-   -->
-
-<!-- You can replace the card's data with your own here. -->
-<BaseLayout title="Skyler Seegmiller Portfolio Astro" description="Meta description. Here goes your page description. Provide a clear and concise summary of the content.">
-	<Card
-	  name="Skyler Seegmiller"
-	  position="AI/ML Engineer"
-	  aboutMe={`I'm Skyler, an AI/ML engineer with 5 years of experience in machine learning, RAG systems, and scalable AI applications. I specialize in Python, TensorFlow, PyTorch, and integrating advanced AI with frameworks like React and Flask. I also design cloud-native databases with AstraDB, creating user-centric, high-performance solutions optimized for speed, scalability, and reliability. Let’s collaborate to turn ideas into impactful innovations!`}
-	  linkedin="https://www.linkedin.com/in/skyler-seegmiller"
-	  github="https://github.com/skylerseeg"
-	  cvLink="/files/resume-cv.pdf"
-	  profileImage="/images/profile2.webp"
-	/>
+<!-- 
+   Profile Image Credits:
+   profile2.webp is an example image.
+   Photo by <a href="https://unsplash.com/es/@charlesdeluvio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">charlesdeluvio</a> 
+   on <a href="https://unsplash.com/es/fotos/hombre-con-gorro-negro-kVg2DQTAK7c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>.
+-->
+<BaseLayout
+  title="Skyler Seegmiller Portfolio Astro"
+  description="Explore the portfolio of Skyler Seegmiller, AI/ML Engineer specializing in advanced AI applications, cloud-native databases, and scalable solutions."
+>
+  <Card
+    name="Skyler Seegmiller"
+    position="AI/ML Engineer"
+    aboutMe={`I'm Skyler, an AI/ML engineer with 5 years of experience in machine learning, RAG systems, and scalable AI applications. I specialize in Python, TensorFlow, PyTorch, and integrating advanced AI with frameworks like React and Flask. I also design cloud-native databases with AstraDB, creating user-centric, high-performance solutions optimized for speed, scalability, and reliability. Let’s collaborate to turn ideas into impactful innovations!`}
+    linkedin="https://www.linkedin.com/in/skyler-seegmiller"
+    github="https://github.com/skylerseeg"
+    cvLink="/files/resume-cv.pdf"
+    profileImage="/images/profile2.webp"
+  />
 </BaseLayout>
-
-<!--
-	"Hi there!, I'm Brian. I hope this small template helps you gain visibility while you build great projects. Thank you for using it. I wish you success in everything you set out to do; you will surely achieve great things.
-
-	Here is my GitHub {https://github.com/alcarazbrian}. You can help me by following me, giving a Star to the template, and sharing it so others can see and use it.
-
-	Have a great day!"
- -->
