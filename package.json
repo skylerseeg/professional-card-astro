@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "astro": "^4.9.1",
-    "personal-card-astro": "file:"
+    "personal-card-astro": "file:",
+    "vercel": "^39.3.0"
   }
 }

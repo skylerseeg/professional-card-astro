@@ -1,6 +1,6 @@
 ---
 //src/components/Card.astro
-const {name, position, aboutMe, linkedin, github, cvLink, profileImage } = Astro.props;
+const { name, position, aboutMe, linkedin, github, cvLink, profileImage, huggingFace, astrobuiltRAG, BIGAGI } = Astro.props;
 
 import '../styles/card.css';
 ---
@@ -31,54 +31,23 @@ import '../styles/card.css';
                 </a>
 
                 <!-- Hugging Face Button -->
-                <a href="https://huggingface.co" class="hover-text" target="_blank">
+                <a href={huggingFace} class="hover-text" target="_blank">
                     <span class="tooltip-text">Hugging Face</span>
                     <span class="custom-icon-hf"></span>
                 </a>
 
                 <!-- RAGBot Eight Button -->
-                <a href="https://ragbot-eight.vercel.app/" class="hover-text" target="_blank">
-                    <span class="tooltip-text">RAGBot Eight</span>
+                <a href={astrobuiltRAG} class="hover-text" target="_blank">
+                    <span class="tooltip-text">Astro Built RAG</span>
                     <span class="custom-icon-ragbot"></span>
+                </a>
+
+                <!-- bigAGI Button -->
+                <a href={BIGAGI} class="hover-text" target="_blank">
+                    <img src="/images/big-agi-icon.webp" alt="BIGAGI Icon" style="width: 24px; height: 24px;">                   
+                    <span class="custom-icon-big-agi"></span>
                 </a>
             </div>
         </div>
-        <div class="image">
-            <img src={profileImage} alt="Profile Image">
-        </div>
     </div>
 </div>
-
-<style>
-  /* Custom icon styles */
-  .custom-icon-hf {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url('/images/hf-logo.webp') no-repeat center center;
-    background-size: contain;
-  }
-
-  .custom-icon-ragbot {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url('/images/ragbot-eight-app-logo.webp') no-repeat center center;
-    background-size: contain;
-  }
-
-  .tooltip-text {
-    visibility: hidden;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .hover-text:hover .tooltip-text {
-    visibility: visible;
-  }
-</style>
