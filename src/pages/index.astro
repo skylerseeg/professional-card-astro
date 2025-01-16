@@ -25,3 +25,38 @@ import Card from "../components/Card.astro";
     profileImage="/images/profile2.webp"
   />
 </BaseLayout>
+<!-- New Buttons Section -->
+  <div class="button-container">
+    <a href="https://huggingface.co" target="_blank" class="custom-button">
+      Hugging Face
+    </a>
+    <a href="https://nextjs-ai-chatbot-beta-ecru.vercel.app/" target="_blank" class="custom-button">
+      AI Chatbot App
+    </a>
+  </div>
+
+<style>
+  .button-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .custom-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to right, #005b99, #0b84e3, #dceaff); /* Blue gradient */
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .custom-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+</style>

@@ -12,28 +12,73 @@ import '../styles/card.css';
             <h2>{position}</h2>
             <p>{aboutMe}</p>
             <div class="icons">
+                <!-- LinkedIn Button -->
                 <a href={linkedin} class="hover-text" target="_blank">
-                    <span class="tooltip-text" id="fade">
-                        LinkedIn
-                    </span>
-                    <i class="bi bi-linkedin"></i>
+                    <img src="/images/li-logo.webp" alt="LinkedIn Logo" style="width: 24px; height: 24px;">
+                    <span class="tooltip-text">LinkedIn</span>
                 </a>
+
+                <!-- GitHub Button -->
                 <a href={github} class="hover-text" target="_blank">
-                    <span class="tooltip-text" id="fade">
-                        GitHub
-                    </span>
-                    <i class="bi bi-github"></i>
+                    <img src="/images/gh-logo.webp" alt="GitHub Logo" style="width: 24px; height: 24px;">
+                    <span class="tooltip-text">GitHub</span>
                 </a>
+
+                <!-- Resume Button -->
                 <a href={cvLink} class="hover-text" target="_blank">
-                    <span class="tooltip-text" id="fade">
-                        Resume
-                    </span>
-                    <i class="bi bi-file-earmark-arrow-down"></i>
+                    <img src="/images/resume-icon.webp" alt="Resume Icon" style="width: 24px; height: 24px;">
+                    <span class="tooltip-text">Resume</span>
+                </a>
+
+                <!-- Hugging Face Button -->
+                <a href="https://huggingface.co" class="hover-text" target="_blank">
+                    <span class="tooltip-text">Hugging Face</span>
+                    <span class="custom-icon-hf"></span>
+                </a>
+
+                <!-- RAGBot Eight Button -->
+                <a href="https://ragbot-eight.vercel.app/" class="hover-text" target="_blank">
+                    <span class="tooltip-text">RAGBot Eight</span>
+                    <span class="custom-icon-ragbot"></span>
                 </a>
             </div>
         </div>
         <div class="image">
-            <img src={profileImage} alt="">
+            <img src={profileImage} alt="Profile Image">
         </div>
     </div>
 </div>
+
+<style>
+  /* Custom icon styles */
+  .custom-icon-hf {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('/images/hf-logo.webp') no-repeat center center;
+    background-size: contain;
+  }
+
+  .custom-icon-ragbot {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('/images/ragbot-eight-app-logo.webp') no-repeat center center;
+    background-size: contain;
+  }
+
+  .tooltip-text {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .hover-text:hover .tooltip-text {
+    visibility: visible;
+  }
+</style>

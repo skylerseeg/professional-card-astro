@@ -27,14 +27,15 @@
 }
 
 /* CARD */
-.card-container{
+.card-container {
     display: flex;
     width: 650px;
     height: auto;
-    background: linear-gradient(to right,#024945, #12a89c); /* #2FEBD4, #DEFFFD*/
+    background: linear-gradient(to right, #004d4d, #007373, #009999, #00b3b3, #00cccc, #00e6e6); /* Adjusted to teal tones */
     border-radius: 12px;
     box-shadow: 1px 7px 10px 2px rgba(0, 0, 0, .15);
 }
+
 
 .descripcion{
     display: flex;
@@ -115,7 +116,7 @@ a:hover{
     .card-container{
         display: flex;
         flex-direction: column-reverse;
-        background: linear-gradient(#12a89c, #024945);
+        background: linear-gradient(#004d4d, #00e6e6);
         width: 750px;
         margin-top: 12px;
         margin-bottom: 12px;
