@@ -1,5 +1,5 @@
-//src/components/Card.astro
-const {name, position, aboutMe, linkedin, github, cvLink, profileImage } = Astro.props;
+---
+const {name, position, aboutMe, linkedin, github, cvLink, profileImage, huggingFace, astrobuiltRAG } = Astro.props;
 
 import '../styles/card.css';
 ---
@@ -25,8 +25,8 @@ import '../styles/card.css';
 
                 <!-- Resume Button -->
                 <a href={cvLink} class="hover-text" target="_blank">
-                    <img src="/images/resume-icon.webp" alt="Resume Icon" style="width: 24px; height: 24px;">
                     <span class="tooltip-text">Resume</span>
+                    <i class="bi bi-file-earmark-arrow-down"></i>
                 </a>
 
                 <!-- Hugging Face Button -->
@@ -43,7 +43,7 @@ import '../styles/card.css';
             </div>
         </div>
         <div class="image">
-            <img src={profileImage} alt="Profile photo of the user, circular frame with a smiling individual." data-astro-cid-dohjnao5="">
+            <img src={profileImage} alt="Profile photo of the user, circular frame with a smiling individual.">
         </div>
     </div>
 </div>
@@ -81,4 +81,3 @@ import '../styles/card.css';
     visibility: visible;
   }
 </style>
-
